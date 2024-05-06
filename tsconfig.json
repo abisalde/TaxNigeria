@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		"baseUrl": "src",
+		"paths": {
+			"@tax-nigeria-components/*": ["./shared/components/*"],
+			"@constants/*": ["./shared/constants/*"],
+			"@utils/*": ["./utils/*"],
+			"@lib/*": ["./lib/*"],
+			"@assets/*": ["./assets/*"],
+			"@hooks": ["./hooks/index"],
+			"@styles/*": ["./styles/*"],
+			"@helpers": ["./helpers/index"],
+			"@pages": ["./pages/index"],
+			"@page-routes/*": ["./routes/*"],
+			"@routes": ["./routes/index"],
+			"@local-storage": ["./lib/storage"],
+			"@tax-nigeria/*": ["*"]
+		}
+	},
+	"include": ["src"],
+	"references": [{"path": "./tsconfig.node.json"}]
+}
