@@ -109,7 +109,7 @@ export const VerifyEmailLoader = async () => {
 	const email = getCookie({key: USER_EMAIL_KEY});
 
 	if (typeof email === 'undefined') {
-		return redirect('/login');
+		return redirect('/sign-in');
 	}
 	return null;
 };
